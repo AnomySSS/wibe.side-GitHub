@@ -1,4 +1,4 @@
-Pro spoušteni aplikace pouzetje link https://wibe-side.ai.studio/ 
+Pro spuštění aplikace použijte odkaz https://wibe-side.ai.studio/
 # Wibe-Side
 
 Wibe-Side je webová aplikace, která pomáhá lidem navazovat reálné kontakty a trávit méně času bezcílným scrollingem na telefonu. 
