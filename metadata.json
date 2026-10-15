@@ -1,0 +1,10 @@
+{
+  "name": "WIBE-SIDE",
+  "description": "A hyper-local map for meeting new people and discovering activities across the Královéhradecký region.",
+  "requestFramePermissions": [
+    "geolocation"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
