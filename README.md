@@ -1,20 +1,12 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# Wibe-Side
 
-# Run and deploy your AI Studio app
+Wibe-Side je webová aplikace, která pomáhá lidem navazovat reálné kontakty a trávit méně času bezcílným scrollingem na telefonu. 
 
-This contains everything you need to run your app locally.
+Uživatelé mohou sami vytvářet veřejné akce, zvát na ně ostatní a potkávat se na základě společných zájmů. 
+Aplikace obsahuje vestavěnou mapu s navigací k místу setkání, zobrazuje datum a čas konání a hlídá maximální kapacitu účastníků. 
+Více důležitou a plně funkční část můžete vyzkoušet sami, nebo si ji prohlédnout během naší prezentace.
 
-View your app in AI Studio: https://ai.studio/apps/8d76d7c6-63b1-400e-9308-f0af5d2cd7a2
-
-## Run Locally
-
-**Prerequisites:**  Node.js
-
-
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## Tým InTech
+* Evžen Suprunkov
+* Tomáš Bázler
+* Miron Suprunkov
