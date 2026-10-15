@@ -1,0 +1,98 @@
+@import "tailwindcss";
+@import "leaflet/dist/leaflet.css";
+
+@layer base {
+  :root {
+    --font-display: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-sans: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #090d16;
+    color: #f8fafc;
+    overflow-x: hidden;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  h1, h2, h3, h4, .font-display {
+    font-family: var(--font-display);
+  }
+
+  .font-mono-tabular {
+    font-family: var(--font-mono);
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+.wibe-leaflet-container {
+  width: 100%;
+  height: 100%;
+  background-color: #0b1120;
+  outline: none;
+}
+
+.wibe-leaflet-container .leaflet-tile-pane {
+  /* Subtle dark style: comfortable dark mode preserving natural colors */
+  filter: brightness(0.76) contrast(1.12) saturate(0.9);
+}
+
+.wibe-leaflet-container .leaflet-control-attribution {
+  background: rgba(15, 23, 42, 0.75) !important;
+  color: #94a3b8 !important;
+  font-size: 10px !important;
+  backdrop-filter: blur(4px);
+  border-top-left-radius: 6px;
+  padding: 2px 6px !important;
+}
+
+.wibe-leaflet-container .leaflet-control-attribution a {
+  color: #cbd5e1 !important;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+@keyframes insta-heart-burst {
+  0% {
+    transform: translate(-50%, -50%) scale(0.2);
+    opacity: 0;
+  }
+  35% {
+    transform: translate(-50%, -50%) scale(1.3);
+    opacity: 1;
+  }
+  70% {
+    transform: translate(-50%, -50%) scale(1.1);
+    opacity: 0.95;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(0.8);
+    opacity: 0;
+  }
+}
+
+.animate-insta-heart {
+  animation: insta-heart-burst 850ms cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+
+@keyframes insta-reaction-pop {
+  0% {
+    transform: scale(0.6);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.animate-reaction-pop {
+  animation: insta-reaction-pop 200ms cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
